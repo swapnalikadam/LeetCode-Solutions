@@ -1,2 +1,2 @@
 # LeetCode-Solutions
-This repository is designed for storing solutions to problems from the LeetCode platform. I've organized the solutions by problem category or difficulty level. Each code has an accompanying README file that explains my approach and captures any learnings I gained from solving each problem.
+Each branch within this repository corresponds to a separate solution, and each solution is accompanied by its own README file. These README files detail my approach to the problem and encapsulate any insights or learnings I acquired during the solving process.
