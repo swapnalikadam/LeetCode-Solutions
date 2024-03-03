@@ -1,0 +1,14 @@
+function findDifference(nums1: number[], nums2: number[]): number[][] {
+    // Create sets to store unique elements in nums1 and nums2
+    const uniqueNum1 = new Set(nums1);
+    const uniqueNum2 = new Set(nums2);
+
+    // Find distinct integers in nums1 that are not present in nums2
+    const diff1 = [...uniqueNum1].filter((num)=> !uniqueNum2.has(num));
+    
+    // Find distinct integers in nums2 that are not present in nums1
+    const diff2 = [...uniqueNum2].filter((num)=> !uniqueNum1.has(num));
+
+    // Return the result as a 2D array
+    return [diff1, diff2]; 
+};
