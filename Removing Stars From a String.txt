@@ -1,0 +1,15 @@
+function removeStars(s: string): string {
+    //declare empty stack
+    const stack : string[] = [];
+
+    //iterate over string
+    for(let char of s){
+        //if current element is "*" we pop slement from stack
+        if(char === "*") stack.pop()
+        //else we push element into stack 
+        else stack.push(char)
+    }
+
+    //join array and return result string
+    return stack.join('');
+};
